@@ -7,7 +7,9 @@ new Vue({
     websiteTag: '<a href="https://www.charlesjewell.com">Here</a>',
     age: 25,
     x: 0,
-    y: 0
+    y: 0,
+    a: 0,
+    b: 0
   },
   methods: {
     greet: function(people) {
@@ -21,13 +23,24 @@ new Vue({
     },
     updateXY: function(e) {
       this.x = e.offsetX,
-      this.y = e.offsetY
+      this.y = e.offsetY;
     },
     logName: function() {
-      console.log('name')
+      console.log('name');
     },
     logAge: function() {
-      console.log('age')
+      console.log('age');
+    }
+  },
+  computed: {
+    addToA: function() {
+      console.log('a');
+      return this.a + this.age;
+    },
+    addToB: function() {
+      console.log('b');
+      return this.b + this.age;
     }
   }
+
 });
