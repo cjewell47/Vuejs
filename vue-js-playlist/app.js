@@ -5,7 +5,9 @@ new Vue({
     job: 'Baller',
     website: 'https://www.charlesjewell.com',
     websiteTag: '<a href="https://www.charlesjewell.com">Here</a>',
-    age: 25
+    age: 25,
+    x: 0,
+    y: 0
   },
   methods: {
     greet: function(people) {
@@ -16,6 +18,10 @@ new Vue({
     },
     subtract: function(dec) {
       this.age -= dec;
+    },
+    updateXY: function(e) {
+      this.x = e.offsetX,
+      this.y = e.offsetY
     }
   }
 });

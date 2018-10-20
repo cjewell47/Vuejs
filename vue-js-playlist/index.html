@@ -17,9 +17,13 @@
       <h2>Events by {{ name }}</h2>
       <button v-on:click="add(1)">Add a year</button>
       <button v-on:click="subtract(1)">Subtract a year</button>
-      <button v-on:mouseup="add(10)">Add 10 years</button>
-      <button v-on:mouseup="subtract(10)">Subtract 10 years</button>
+      <button @mouseup="add(10)">Add 10 years</button>
+      <button @mouseup="subtract(10)">Subtract 10 years</button>
       <p>I am {{ age }}</p>
+
+      <div id="canvas" v-on:mousemove="updateXY">
+        {{ x }}, {{ y }}
+      </div>
     </div>
 
     <script src="app.js"></script>
