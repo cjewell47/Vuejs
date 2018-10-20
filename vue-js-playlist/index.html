@@ -24,6 +24,12 @@
       <div id="canvas" v-on:mousemove="updateXY">
         {{ x }}, {{ y }}
       </div>
+
+      <h1>Keyboard events</h1>
+      <label>Name:</label>
+      <input type="text" v-on:keyup.enter="logName" />
+      <label>Age:</label>
+      <input type="text" v-on:keyup.enter="logAge" />
     </div>
 
     <script src="app.js"></script>
