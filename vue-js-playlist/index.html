@@ -13,7 +13,7 @@
       <a v-bind:href="website">{{ job }}</a>
       <a :href="website">Once again</a>
       <p v-html="websiteTag"></p>
-
+<!--
       <h2>Events by {{ name }}</h2>
       <button v-on:click="add(1)">Add a year</button>
       <button v-on:click="subtract(1)">Subtract a year</button>
@@ -42,14 +42,23 @@
       <h1>Dynamic CSS</h1>
       <h2>Example 1</h2>
       <div v-on:click="available = !available" v-bind:class="{available: available}">
-        <span>Daquan</span>
+        <span>Daquand</span>
       </div>
       <h2>Example 2</h2>
       <button v-on:click="nearby = !nearby">Toggle Nearby</button>
       <button v-on:click="available = !available">Toggle Available</button>
       <div v-bind:class="compClasses">
         <span>Rajeef</span>
-      </div>
+      </div> -->
+
+      <h1>Conditionals</h1>
+      <button v-on:click="error = !error">Toggle error</button>
+      <button v-on:click="success = !success">Toggle success</button>
+      <!-- <p v-if="error">Error!</p>
+      <p v-else-if="success">Success!</p> -->
+      <p v-show="error">Error!</p>
+      <p v-show="success">Success!</p>
+
 
     </div>
 
