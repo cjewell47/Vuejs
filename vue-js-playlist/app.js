@@ -13,7 +13,13 @@ new Vue({
     available: false,
     nearby: false,
     error: false,
-    success: false
+    success: false,
+    migos: ['Quavo', 'Offset', 'Takeoff'],
+    rappers: [
+      {name: 'Drake', town: 'Toronto'},
+      {name: 'Future', town: 'Atlanta'},
+      {name: 'Kendrick', town: 'Compton'}
+    ]
   },
   methods: {
     greet: function(people) {
