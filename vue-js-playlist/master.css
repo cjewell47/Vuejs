@@ -1,4 +1,4 @@
-/* #canvas {
+#canvas {
   width: 600px;
   padding: 200px 20px;
   text-align: center;
@@ -20,7 +20,8 @@ span {
 .nearby span:after {
   content: "nearby";
   margin-left: 10px;
-} */
+}
+
 #bag{
     width: 200px;
     height: 500px;
