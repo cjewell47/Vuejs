@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>VueJS Tutorial</title>
+  <link rel="stylesheet" href="master.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+  <div id="vue-app">
+    <h2>Refs</h2>
+    <input type="text" ref="input" />
+    <button v-on:click="readRefs">Read Input</button>
+    <p>Your No.1 forever is {{ output }}</p>
+    <div ref="test">
+      <p>Hello</p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
